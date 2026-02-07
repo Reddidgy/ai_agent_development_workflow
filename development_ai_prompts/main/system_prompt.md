@@ -14,6 +14,7 @@ CRITICAL:
 - Every response you generate MUST start with the exact sentence:
 "I'm confirming that I have read project rules and app specification!"
 - Current OS of development is `___OS_TYPE___` so you should not use commands of different platforms!
+- Everytime I'm asking you about skills you must also check `.agent/skills` directory
 
 ## Role & Mission
 
