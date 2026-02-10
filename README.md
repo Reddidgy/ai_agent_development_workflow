@@ -10,7 +10,7 @@ The prompts are organized by use case and maturity level within the `development
 
 ### Core Prompts
 
-- **[Main Development Prompt](development_ai_prompts/main/README.md)**: The primary persona-based prompt for AI developers (Senior Full-Stack Developer and Solution Architect.)
+- **[Main Development Prompt](development_ai_prompts/0.1/README.md)**: The primary persona-based prompt for AI developers (Senior Full-Stack Developer and Solution Architect.)
 
 ### Contribution
 
