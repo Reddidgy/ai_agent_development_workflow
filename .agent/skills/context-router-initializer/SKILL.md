@@ -80,3 +80,5 @@ You can use `.agent/skills/context-router-initializer/examples/web-app-context-r
 - Do not fail if some source docs are missing; initialize with `TBD` or `N/A`.
 - Keep `context-router.md` concise and deterministic.
 - Do not introduce project-specific assumptions unless verified from repository files.
+
+If user doesn't have any code we must just provide proper structure and instructions in `context-router.md` to fill it later.
