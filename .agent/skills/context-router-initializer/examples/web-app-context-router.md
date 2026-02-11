@@ -3,7 +3,7 @@ Take a break, think step by step, you will be awarded with $1000 for excellent t
 
 # context-router Purpose
 
-`context-router.md` is the entry point for project documentation and source of truth for project context. 
+`context-router.md` is the entry point for project documentation and source of truth for project context.
 Use it to quickly find the right document in `project-context/` without loading unnecessary files.
 
 # How to use this router
@@ -35,11 +35,19 @@ MISSION: Architect and build clean, scalable, maintainable software.
 - Manage configuration through environment variables.
 - Keep `.env.example` updated with required variables and no secrets.
 - Follow RESTful API conventions and consistent payload structures.
+- When you implement something you must also update proper documentation in `project-context/`
+
+## UI Bugs Fixes and implementations
+
+When mentioned agentation you must use MCP server agentation to gather feedback and implement changes or fix bug
+If you didn't check agentation MCP but you said you made change - it's a red flag of enterprise policy
 
 # Project context map
 
 ## Project description
-{{ short_project_description }} (not more than 250 characters)
+Agent Cold Sales is an AI assistant designed for organizing cold sales campaigns.
+The MVP targets sales directors in mid-sized businesses with a defined USP in game development
+who face the challenge of rapid testing of demand for new products or services.
 
 ## Product overview and goals
 Product mission, users, value proposition, and MVP scope.
@@ -65,9 +73,9 @@ Location: `project-context/architecture/ui-objects.md`
 HTTP endpoints, payloads, and response structure.
 Location: `project-context/api/api-specification.md`
 
-## {{ any_other_relevant_context_block_name }}
-{{ short_description_of_this_block }}
-Location: `{{ path_to_this_block_doc }}`
+## Localization
+How localization is configured, loaded, and maintained.
+Location: `project-context/architecture/localization.md`
 
 # Response output format
 
