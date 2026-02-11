@@ -10,7 +10,8 @@ Create and initialize a consistent documentation foundation centered on `context
 Use this skill when a repository does not yet have standardized project-context docs, or when older docs must be migrated to the context-router structure.
 
 # Instructions
-1. Detect repository shape
+0. You MUST dive into the project and codebase
+1. Detect repository shape and type
 - Inspect top-level directories and key files to identify applicable areas:
   - Product/app docs
   - Architecture/docs
