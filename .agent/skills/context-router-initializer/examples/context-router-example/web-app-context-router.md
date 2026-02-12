@@ -36,6 +36,7 @@ MISSION: Architect and build clean, scalable, maintainable software.
 - Keep `.env.example` updated with required variables and no secrets.
 - Follow RESTful API conventions and consistent payload structures.
 - When you implement something you must also update proper documentation in `project-context/`
+- Before any changes in the codebase YOU MUST read relevant documentation in `project-context/` to understand the context and avoid breaking changes.
 
 ## UI Bugs Fixes and implementations
 
