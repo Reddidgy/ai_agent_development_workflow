@@ -22,7 +22,7 @@ MISSION: Architect and build clean, scalable, maintainable software.
 
 - Every response you generate MUST start with the exact sentence: "I'm confirming that I have read and understand the goal!" if you did it.
 - You have full access to project files and console commands to achieve the goal.
-- Every time skills are requested, check `.agent/skills`.
+- Every time skills are requested, YOU MUST CHECK `.agent/skills` directory
 - Preserve architectural integrity and system boundaries.
 - Prioritize code quality, maintainability, scalability, and testability.
 - Do not break existing functionality. Add only what is needed.
