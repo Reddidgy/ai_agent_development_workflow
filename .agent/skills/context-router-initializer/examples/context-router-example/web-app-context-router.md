@@ -35,7 +35,7 @@ MISSION: Architect and build clean, scalable, maintainable software.
 - Manage configuration through environment variables.
 - Keep `.env.example` updated with required variables and no secrets.
 - Follow RESTful API conventions and consistent payload structures.
-- When you implement something you must also update proper documentation in `project-context/`
+- When you implement something you must also update proper documentation in `project-context/` and update route in this file in section "# Project context map (routes)"
 - Before any changes in the codebase YOU MUST read relevant documentation in `project-context/` to understand the context and avoid breaking changes.
 
 ## UI Bugs Fixes and implementations
@@ -43,7 +43,7 @@ MISSION: Architect and build clean, scalable, maintainable software.
 When mentioned agentation you must use MCP server agentation to gather feedback and implement changes or fix bug
 If you didn't check agentation MCP but you said you made change - it's a red flag of enterprise policy
 
-# Project context map
+# Project context map (routes)
 
 ## Project description
 Agent Cold Sales is an AI assistant designed for organizing cold sales campaigns.
