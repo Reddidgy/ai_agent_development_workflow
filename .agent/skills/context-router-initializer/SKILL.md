@@ -10,8 +10,9 @@ Create and initialize a consistent documentation foundation centered on `context
 Use this skill when a repository does not yet have standardized project-context docs, or when older docs must be migrated to the context-router structure.
 
 # Instructions
-0. You MUST dive into the project and codebase
-1. Detect repository shape and type
+1. You MUST dive into the project and codebase
+2. Copy `./examples/context-router-example/web-app-context-router.md` to the root of the repo with the name `context-router.md`
+3. Detect repository shape and type
 - Inspect top-level directories and key files to identify applicable areas:
   - Product/app docs
   - Architecture/docs
@@ -19,7 +20,7 @@ Use this skill when a repository does not yet have standardized project-context 
   - Infra/deployment docs
 - Keep one unified structure regardless of project type. If an area is not applicable, keep the section and mark as `N/A`.
 
-2. Ensure canonical folder structure exists
+4. Ensure canonical folder structure exists
 - Create (if missing):
   - `project-context/product/`
   - `project-context/architecture/`
@@ -32,8 +33,8 @@ Use this skill when a repository does not yet have standardized project-context 
   - `project-context/architecture/ui-objects.md`
   - `project-context/api/api-specification.md`
 
-3. Create or update `context-router.md`
-- Make `context-router.md` the entry point and source of truth pointer document.
+5. Update and adapt `context-router.md` in the root of the repository to the project context
+- Make `context-router.md` the entry point and source of truth pointer document of the project context.
 - Enforce this exact high-level section order:
   1) context-router Purpose
   2) How to use this router
@@ -44,7 +45,7 @@ Use this skill when a repository does not yet have standardized project-context 
   7) Current goal
 - Keep wording concise and instruction-first.
 
-4. Populate the project context map
+6. Populate the project context map
 - Always include these entries and paths:
   - Product overview and goals -> `project-context/product/application-overview.md`
   - Feature status -> `project-context/product/implemented-features.md`
@@ -54,11 +55,11 @@ Use this skill when a repository does not yet have standardized project-context 
   - Backend API contract -> `project-context/api/api-specification.md`
 - If a section does not apply to the repo type, keep the map entry and mark target file content as `N/A` with short reason.
 
-5. Migrate from legacy docs when present
+7. Migrate from legacy docs when present
 - Preserve useful constraints and architecture rules.
 - Delete only explicitly deprecated bootstrap files after migration is complete.
 
-6. Fill base files with minimal useful content
+8. Fill base files with minimal useful content
 - `application-overview.md`: mission, target users, value, MVP scope.
 - `implemented-features.md`: shipped features and current status.
 - `technology-stack.md`: runtime, framework, storage, tooling.
@@ -66,7 +67,7 @@ Use this skill when a repository does not yet have standardized project-context 
 - `ui-objects.md`: screens/components, or `N/A` if no UI.
 - `api-specification.md`: endpoints/contracts, or `N/A` if no API.
 
-7. Verify
+9. Verify
 - Confirm `context-router.md` exists and references only valid paths.
 - Confirm all mapped files exist.
 - Confirm content has no tables and no bold formatting in `context-router.md`.
