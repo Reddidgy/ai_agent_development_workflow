@@ -38,6 +38,7 @@ MISSION: Architect and build clean, scalable, maintainable software.
 - When you implement something you must also update proper documentation in `project-context/` and update route in this file in section "# Project context map (routes)"
 - Before any changes in the codebase YOU MUST read relevant documentation in `project-context/` to understand the context and avoid breaking changes.
 - When I'm asking to update current state you MUST use skill `.agents/skills/current-state-updater`
+- When I'm asking to get current state you MUST use skill `.agents/skills/getting-current-app-state`
 
 ## UI Bugs Fixes and implementations
 
