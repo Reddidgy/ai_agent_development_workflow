@@ -1,4 +1,4 @@
-# project-context-refactoring Skill
+# context-router-refactoring Skill
 
 ## Overview
 This skill automatically refactors large documentation files in the project-context/ directory by splitting them into modular subdocuments when they exceed 300 lines. It creates a structured directory with a router file for better maintainability and navigation.
@@ -48,12 +48,12 @@ Location: project-context/{{relative-path}}/{{filename}}.md
 ## How to Apply
 In your Agent interface, write:
 ```
-Apply skill project-context-refactoring to refactor my project documentation
+Apply context-router-refactoring to refactor my project documentation
 ```
 
 Or more specifically:
 ```
-Use project-context-refactoring skill to analyze and refactor large files in project-context/
+Use context-router-refactoring skill to analyze and refactor large files in project-context/
 ```
 
 ## Files Generated

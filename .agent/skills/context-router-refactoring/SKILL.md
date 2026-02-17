@@ -1,5 +1,5 @@
 ---
-name: project-context-refactoring
+name: context-router-refactoring
 description: Automatically refactors large documentation files (>300 lines) in project-context/ into structured directories with router files. Use when documentation files become too large and need to be split for better maintainability.
 ---
 

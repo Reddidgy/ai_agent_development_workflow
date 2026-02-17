@@ -5,7 +5,7 @@ You can add this goal prompt to your router for the work with specific directory
 
 Current task: Restructuring `project-context/infrastructure/build-artifacts.md` using skill
 
-You must use `project-context-refactoring` for build-artifacts.md
+You must use `context-router-refactoring` for build-artifacts.md
 
 You can not delete anything! You must use created structure if exist
 
