@@ -47,36 +47,36 @@ If you didn't check agentation MCP but you said you made change - it's a red fla
 
 # Project context map (routes)
 
-## Project description
+## Project description route
 Agent Cold Sales is an AI assistant designed for organizing cold sales campaigns.
 The MVP targets sales directors in mid-sized businesses with a defined USP in game development
 who face the challenge of rapid testing of demand for new products or services.
 
-## Product overview and goals
+## Product overview and goals route
 Product mission, users, value proposition, and MVP scope.
 Location: `project-context/product/application-overview.md`
 
-## Feature status
+## Feature status route
 Current feature status and implemented user-facing capabilities.
 Location: `project-context/product/implemented-features.md`
 
-## Technology stack
+## Technology stack route
 Core technologies used by the application
 Location: `project-context/architecture/technology-stack.md`
 
-## Repository layout
+## Repository layout route
 Repository layout and responsibilities of major directories.
 Location: `project-context/architecture/project-structure.md`
 
-## Frontend UI objects
+## Frontend UI objects route
 Key frontend screens and reusable UI objects.
 Location: `project-context/architecture/ui-objects.md`
 
-## Backend API contract
+## Backend API contract route
 HTTP endpoints, payloads, and response structure.
 Location: `project-context/api/api-specification.md`
 
-## Localization
+## Localization route
 How localization is configured, loaded, and maintained.
 Location: `project-context/architecture/localization.md`
 
@@ -103,5 +103,7 @@ Current task: {{ your_current_task_to_ai_agent }}
 - Never use bold formatting in this file.
 - Never use table formatting in this file.
 - Keep this file clear and concise.
+- We must have routes in proper format.
+  - If required - we must create new routes but keep it clear and concise
 
 <promise>COMPLETE</promise>
