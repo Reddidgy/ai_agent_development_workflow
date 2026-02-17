@@ -44,5 +44,5 @@ Agent should:
 
 ## Related skills
 - `.agents/skills/context-router-initializer` - Initial setup
-- `.agents/skills/current-state-updater` - Updates current_state.md
+- `.agents/skills/current-state-updater` - Updates current-state.md
 - `.agents/skills/getting-current-app-state` - Retrieves current state
