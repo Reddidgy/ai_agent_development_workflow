@@ -1,0 +1,112 @@
+# context-router-actualizer Usage Examples
+
+## Example 1: Basic Actualization After Feature Implementation
+
+User request: "I just added task editing functionality. Please actualize the documentation."
+
+Expected actions:
+1. Read src/components/TaskDetail/ to understand the new editing feature
+2. Check if task-detail-workflow.md or similar route exists in context-router.md
+3. If missing, add route entry:
+   - Name: "Task detail workflow route"
+   - Description: Brief summary of editing behavior
+   - Location: project-context/product/task-detail-workflow.md
+4. Update or create task-detail-workflow.md with:
+   - How task detail window opens
+   - Edit/save flow
+   - Field validation
+   - File system write operations
+5. Update implemented-features.md to include task editing in the feature list
+
+## Example 2: Discovering Missing Service Documentation
+
+User request: "Actualize the documentation."
+
+Agent actions:
+1. Scan src/services/ and find:
+   - file-system-service.ts
+   - directory-session-service.ts
+2. Check context-router.md for corresponding routes
+3. Find that file-system-access-api.md exists but only covers basic usage
+4. Add new route or update existing route description
+5. Update project-context/api/file-system-access-api.md to document:
+   - directory-session-service: session persistence, IndexedDB, localStorage usage
+   - file-system-service: saveFile, moveFile, deleteFile helpers
+6. Verify all documented functions exist in actual code
+
+## Example 3: Route Path Correction
+
+User request: "Actualize the documentation."
+
+Agent actions:
+1. Read context-router.md
+2. Find route pointing to project-context/architecture/state-management.md
+3. Check if file exists - it doesn't
+4. Search codebase for state management patterns
+5. Determine state is managed via React hooks only (no dedicated file needed)
+6. Update route description to point to ui-objects.md and note "State managed via React hooks"
+7. Remove reference to non-existent state-management.md
+
+## Example 4: Actualizing After Versioning Changes
+
+User request: "I changed how version is loaded. Actualize docs."
+
+Agent actions:
+1. Read src/constants/app-version.ts
+2. Check current implementation (reads from root version file)
+3. Find versioning.md route in context-router.md
+4. Read project-context/architecture/versioning.md
+5. Update versioning.md to reflect:
+   - Source of truth is root version file
+   - app-version.ts binding mechanism
+   - Version badge display location
+   - Version bump workflow (if scripts exist)
+6. Verify package.json version sync if mentioned
+
+## Example 5: Adding Missing Workflow Route
+
+User request: "Actualize the documentation."
+
+Agent actions:
+1. Read src/components/WelcomeScreen/WelcomeScreen.tsx
+2. Identify complex open-directory flow with:
+   - Directory picker
+   - Recent projects list
+   - IndexedDB handle caching
+   - Permission restoration
+   - Scaffolding
+3. Check if route exists - only partial mention in application-overview.md
+4. Add new route in context-router.md:
+   - Name: "Open directory flow route"
+   - Description: Covers welcome screen, directory picker, recent projects, session restoration
+   - Location: project-context/product/open-directory-flow.md
+5. Create open-directory-flow.md with detailed workflow documentation
+6. Update implemented-features.md to cross-reference the new route
+
+## Example 6: Consolidating Overlapping Documentation
+
+User request: "Actualize the documentation."
+
+Agent actions:
+1. Find that both ui-objects.md and main-app-layout.md cover MainApp component
+2. Read both files to understand overlap
+3. Decide on clear separation:
+   - ui-objects.md: catalog of all UI components and their responsibilities
+   - main-app-layout.md: specific layout, header, status indicators, view switching
+4. Update route descriptions in context-router.md to reflect this distinction
+5. Update both files to reduce duplication and clarify scope
+6. Ensure cross-references between docs where appropriate
+
+## Non-Example: What NOT to do
+
+User request: "Actualize the documentation."
+
+Incorrect actions:
+- Adding routes for documentation files themselves (e.g., route to context-router.md)
+- Creating routes before verifying feature exists in code
+- Adding planned/future features to docs
+- Using bold formatting or tables in context-router.md
+- Removing routes for implemented features
+- Creating circular references between doc files
+- Documenting third-party library internals
+- Adding verbose explanations instead of concise facts
